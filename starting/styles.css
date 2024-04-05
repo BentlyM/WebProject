@@ -1,0 +1,54 @@
+body{
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    background-color: hsla(40, 100%, 97%);
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+}
+
+.navigation {
+    display: contents;
+    position: fixed;
+}
+
+.hRziEjnaZion {
+    background-image: url(/resources/preview16.jpg);
+}
+
+.hRziEjnaZion.mLpUeXbAnMvm {
+    display: ruby-text; 
+}
+
+.mLpUeXbAnMvm ul { /* */
+    display: unset;
+    list-style-type: none;
+}
+
+.mLpUeXbAnMvm ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.mLpUeXbAnMvm ul li:hover .sKvJgYlOaVfc {
+    display: block;
+}
+
+.sKvJgYlOaVfc {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.sKvJgYlOaVfc ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sKvJgYlOaVfc ul li {
+    display: block;
+}
