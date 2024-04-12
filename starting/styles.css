@@ -12,7 +12,7 @@ ul a {
 }
 
 .brand {
-    font-size:  
+    font-size:large; /* 2em */
 }
 
 .navigation {
@@ -26,6 +26,7 @@ ul a {
 
 .hRziEjnaZion.mLpUeXbAnMvm {
     display: ruby-text; 
+    justify-content: space-evenly;
 }
 
 .mLpUeXbAnMvm ul { /* */
