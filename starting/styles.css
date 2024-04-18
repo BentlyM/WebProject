@@ -58,7 +58,6 @@ body {
     height: 700px;
     width: 1200px;
     background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*9bobrd*_ga*OTM1MTg4MTU2MS4xNzEwMTgwMDky*_ga_3LRZM6TM9L*MTcxMzM5MjQzNi4xMS4xLjE3MTMzOTI1MzcuNDcuMC4w');
-    align-items: center;
     justify-content: center;
     flex-direction: column;
   }
@@ -75,3 +74,22 @@ body {
     margin: 0%;
   }
   
+  .cozytea {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 1000px;
+  }
+
+  .teamonth {
+    width: 300px;
+    height: 200px;
+  }
+
+  .teaposition {
+    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+    width: 1000px;
+  }
