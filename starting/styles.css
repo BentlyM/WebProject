@@ -1,60 +1,65 @@
-body{
-    overflow: auto;
-    margin: 0;
-    padding: 0;
-    background-color: hsla(40, 100%, 97%);
-}
-
-ul a {
-    text-decoration: none;
-    font-size: large;
+body {
+    font-family: Helvetica; 
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+  }
+  
+  header.banner {
+    display: fixed;
+    width: 100%;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation {
+    display: flex;
+    height: 69px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    overflow: hidden;
+  }
+  
+  .title {
+    margin-left: 10px;
+    height: 50px;
+    flex-grow: 8;
+  }
+  
+  .mission,
+  .tea,
+  .location
+  {
+    margin: 0px 10px;
     font-weight: bold;
-}
-
-.brand {
-    font-size:large; /* 2em */
-}
-
-.navigation {
-    display: contents;
-    position: fixed;
-}
-
-.hRziEjnaZion {
-    background-image: url(/resources/preview16.jpg);
-}
-
-.hRziEjnaZion.mLpUeXbAnMvm {
-    display: ruby-text; 
-    justify-content: space-evenly;
-}
-
-.mLpUeXbAnMvm ul { /* */
-    display: unset;
-    list-style-type: none;
-}
-
-.mLpUeXbAnMvm ul li {
     display: inline-block;
-    position: relative;
-}
-
-.mLpUeXbAnMvm ul li:hover .sKvJgYlOaVfc {
-    display: block;
-}
-
-.sKvJgYlOaVfc {
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.sKvJgYlOaVfc ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sKvJgYlOaVfc ul li {
-    display: block;
-}
+  }
+  
+  .link {
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    height: 700px;
+    width: 1200px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*9bobrd*_ga*OTM1MTg4MTU2MS4xNzEwMTgwMDky*_ga_3LRZM6TM9L*MTcxMzM5MjQzNi4xMS4xLjE3MTMzOTI1MzcuNDcuMC4w');
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .contentwrapped {
+    text-align: center;
+    background-color: black;
+    width: 100%;
+  }
+  
