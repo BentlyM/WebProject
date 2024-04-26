@@ -130,3 +130,7 @@ body {
   .locationcard p {
     line-height: 50px;
   }
+
+  .Contact {
+    height: 200px;
+  }
