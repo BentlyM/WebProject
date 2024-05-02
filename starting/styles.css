@@ -1,136 +1,71 @@
 body {
-    font-family: Helvetica; 
-    margin: 0px;
-    padding: 0px;
-    background-color: black;
-    font-size: 22px;
-    color: seashell;
-    opacity: 0.9;
-    overflow: auto;
-  }
-  
-  header#banner {
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  background-color: #131118fb;
+  margin: 0%;
+  padding: 0%;
+}
+
+.navigation {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  background-color: #131118;
+  border: 2px solid #1f1b2bec;
+  overflow: hidden;
+}
+
+.icon img {
+  height: 100%;
+  width: 4em;
+}
+
+.title {
+  position: relative;
+  top: 5%;
+  align-self: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 15px;
+  width: 20em;
+}
+
+#slogan {
+  font-size: 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: end;
+}
+
+.nav-redirect {
+  position: relative;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.2rem;
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 320px){
+  .title, #slogan{
+    display: none;
   }
 
-  section {
-    display: flex;
-    justify-content: center;
-  }
-  
   .navigation {
-    display: flex;
-    height: 69px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    border-bottom: 1px solid seashell;
-    overflow: hidden;
-  }
-  
-  .title {
-    margin-left: 10px;
-    height: 50px;
-    flex-grow: 8;
-  }
-  
-  .mission,
-  .tea,
-  .location
-  {
-    margin: 0px 10px;
-    font-weight: bold;
-    display: inline-block;
-  }
-  
-  .link {
-    color: white;
-  }
-  
-  #container {
-    display: flex;
-    height: 700px;
-    width: 1200px;
-    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*9bobrd*_ga*OTM1MTg4MTU2MS4xNzEwMTgwMDky*_ga_3LRZM6TM9L*MTcxMzM5MjQzNi4xMS4xLjE3MTMzOTI1MzcuNDcuMC4w');
     justify-content: center;
-    flex-direction: column;
   }
-  
-  .contentwrapped {
-    text-align: center;
-    background-color: black;
-    width: 100%;
-  }
-
-  h1.goal , 
-  h4.specificgoal {
-    padding: 10px 0px 10px 0;
-    margin: 0%;
-  }
-  
-  #cozytea {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 1000px;
-  }
-
-  .teamonth {
-    width: 300px;
-    height: 200px;
-  }
-
-  .teaposition {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    display: flex;
-    width: 1000px;
-  }
-
-  .locationwrap {
-    position: relative;
-    top: 100px;
-    background-position: top;
-    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1vumjh6*_ga*MTYyOTU2NDA0My4xNzEyMzIzMzc5*_ga_3LRZM6TM9L*MTcxMzUzNTQxMS4yOC4xLjE3MTM1MzU0MTcuNTQuMC4w');
-    display: flex;
-    height: 500px;
-    width: 1200px;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .locationtitle {
-    text-align: center;
-    width: 100%;
-  }
-
-  .cardwrap {
-    display: flex;
-    justify-content: space-evenly;
-  }
+}
 
 
-  .locationcard {
-    text-align: center;
-    background-color: black;
-    opacity: 1;
-    width: 300px;
-    height: 300px;
-  }
-
-  .locationcard p {
-    line-height: 50px;
-  }
-
-  .Contact {
-    height: 200px;
-  }
