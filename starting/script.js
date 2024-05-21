@@ -91,7 +91,7 @@ nextThree.onclick = function(){
 
 
 // This is the event handler property and function for the startOver button
-startOver.onclick = function() {
+startOver.onclick = function(){
   nextOne.hidden = false;
   startOver.hidden = true;
    document.getElementById('word-one').innerHTML = 'HAP-';
