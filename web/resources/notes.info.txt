@@ -1,0 +1,17 @@
+-- what is it that i wish to create
+-- what would a enginner do? 
+-- what would a computer scientist do? 
+
+create something you need...
+what can you implement from a real world experience...
+you care about your time maybe a pomodera timer?
+you like being organized perhaps a appending todo list?
+you like being motivated maybe a impersional quote generator? - yes
+you want a job as a software enginner create a portfolio?
+you have trouble with css grid create a tic tac toe game?
+you want to be fit why not build something to track work outs
+
+you dont have to have all the answers now.
+its ok so ask your community for help.
+what would a software engineer do?
+
