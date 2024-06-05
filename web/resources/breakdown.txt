@@ -6,4 +6,5 @@ what are somethings a calculator usually has? Addition , Subtraction, Multiplica
     - why shouldn't these put all in one function?
         - because a function should only do one thing its easier to maintain and reuse when this is the case.
         - clean , easy to read, scalable.
-    -
+
+how will you implement a functionality? 
