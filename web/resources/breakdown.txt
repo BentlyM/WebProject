@@ -1,2 +1,9 @@
-create a generative motivation app
-the apple will t
+create a calculator app...
+what would a software engineer do?
+what would a computer scientist do?
+
+what are somethings a calculator usually has? Addition , Subtraction, Multiplication, Division
+    - why shouldn't these put all in one function?
+        - because a function should only do one thing its easier to maintain and reuse when this is the case.
+        - clean , easy to read, scalable.
+    -

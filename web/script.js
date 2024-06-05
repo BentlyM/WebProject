@@ -1,24 +1,23 @@
-const unorder = document.querySelector('ul');
-const prompt = document.querySelector('.list');
-const btn = document.querySelector('button');
+const add = (x , y) => x + y;
+const sub = (x , y) => x - y;
+const multi = (x , y) => x * y;
+const divide = (x , y) => x / y;
 
-btn.addEventListener('click', () => {
-    let inputField = document.querySelector('#item').value;
-    document.getElementById('item').value = '';
+let number1;
+let number2;
+let operator;
 
-    let list = document.createElement('li');
-    let text = document.createElement('span');
-    let newBtn = document.createElement('button');
-
-    newBtn.textContent = 'Delete';
-    unorder.appendChild(list);
-    list.appendChild(text)
-    text.textContent = inputField;
-    text.appendChild(newBtn);
-
-    newBtn.addEventListener('click' , () => {
-        list.parentNode.removeChild(list);
-    });
-
-    
-});
+const operate = (number1, number2, operator) => {
+    switch (operator) {
+      case '+':
+        return add(number1, number2);
+      case '-':
+        return sub(number1, number2);
+      case '*':
+        return multi(number1, number2);
+      case '/':
+        return divide(number1, number2);
+      default:
+        throw new Error('Invalid operator');
+    }
+  };
