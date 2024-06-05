@@ -6,9 +6,11 @@
 
 const createGridLayout = () => {
     const container = document.getElementById('numbers');
-    for (let i = 0; i < 12; ++i) {
+    const child = container.children;
+    for (let i = 0; i < 9; ++i) {
         const element = document.createElement('div');
         element.className = 'btn';
+        element.innerHTML = i + 1;
         container.append(element);
       }
 }
