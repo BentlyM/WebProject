@@ -15,16 +15,16 @@ const createGridLayout = () => {
       }
 }
 
-const operate = (number1, number2, operator) => {
-    switch (calc.operator) {
+const operate = (x, y, op) => {
+    switch (op) {
       case '+':
-        return add(number1, number2);
+        return add(x, y);
       case '-':
-        return sub(number1, number2);
+        return sub(x, y);
       case '*':
-        return multi(number1, number2);
+        return multi(x, y);
       case '/':
-        return divide(number1, number2);
+        return divide(x, y);
       default:
         throw new Error('Invalid operator');
     }
