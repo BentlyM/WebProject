@@ -7,4 +7,9 @@ what are somethings a calculator usually has? Addition , Subtraction, Multiplica
         - because a function should only do one thing its easier to maintain and reuse when this is the case.
         - clean , easy to read, scalable.
 
-how will you implement a functionality? 
+how will you implement a functionality to the numbers given they are contained in there own html wrap using appended javascript? included in the appending of buttons we can use a for each method to assign the innerHtml and the value of the container.
+
+the for each method doesn't have a given limit what is the for each method iterating threw? there are three methods
+    - method one iterate threw a nested object array given a key assignment of 'value' and then assign it a prop of the given number in ascending order. this allows use to specify the amount of digits, there length, and include the values noted in the pervious question aka (innerHtml) and value.
+    - method two ?
+    - method three ?
