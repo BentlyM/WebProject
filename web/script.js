@@ -5,7 +5,7 @@ const addition = document.getElementById('addition');
 const equal = document.getElementById('equal');
 const digit = document.getElementById('digit');
 const clear = document.querySelector('#clear');
-let num1 , num2, operator;
+let num1, num2 , operator;
 let sum = 0; 
 
 const operations = [
@@ -28,6 +28,32 @@ const buttons = [
   { value: '9' },
 ];
 
+const operate = (x, y, op) => {
+  switch (op) {
+    case '+':
+      return add(x, y);
+    case '-':
+      return sub(x, y);
+    case '*':
+      return multi(x, y);
+    case '/':
+      return divide(x, y);
+    default:
+      throw new Error('Invalid operator');
+  }
+};
+
+const add = (x , y) => x + y;
+const sub = (x , y) => x - y;
+const multi = (x , y) => x * y;
+const divide = (x , y) => x / y;
+
+const handleOperatorClick = (currentOperator) => {
+  num1 = +digit.innerHTML;
+  operator = currentOperator;
+  digit.innerHTML = '';
+}
+
 clear.addEventListener('click', ()=>{
   if(digit.innerHTML != ''){
     sum = 0;
@@ -40,26 +66,31 @@ clear.addEventListener('click', ()=>{
 
 division.addEventListener('click',()=>{
   division.value = operations[0].value;
-  division.style.opacity = 0.9;
-  operator = division.value;
-  console.log(operator);
+  handleOperatorClick(division.value);
+})
+
+multiply.addEventListener('click',()=>{
+  multiply.value = operations[1].value;
+  handleOperatorClick(multiply.value);
+})
+
+subtraction.addEventListener('click', ()=> {
+  subtraction.value = operations[2].value
+  handleOperatorClick(subtraction.value);
+})
+
+addition.addEventListener('click', ()=>{
+  addition.value = operations[3].value
+  handleOperatorClick(addition.value);
 })
 
 equal.addEventListener('click', ()=> {
-  equal.value = sum;
-  digit.innerHTML = equal.value;
-  if (num1 != '' && num2 != '') {
-    operate()
-    operator = '='
-  }
+  num2 = +digit.innerHTML;  
+  sum = operate(num1, num2, operator);
+  console.log(`${num1} ${operator} ${num2} is ${sum}`);
+  digit.innerHTML = sum.toPrecision(3);
+  if(sum === 1/0) {digit.innerHTML = 'HeHe'}
 })
-
-const add = (x , y) => x + y;
-const sub = (x , y) => x - y;
-const multi = (x , y) => x * y;
-const divide = (x , y) => x / y;
-
-
 
 const createNumberLayout = () => {
     const container = document.getElementById('numbers');
@@ -77,19 +108,4 @@ const createNumberLayout = () => {
   });
 }
 
-const operate = (x, y, op) => {
-    switch (op) {
-      case '+':
-        return add(x, y);
-      case '-':
-        return sub(x, y);
-      case '*':
-        return multi(x, y);
-      case '/':
-        return divide(x, y);
-      default:
-        throw new Error('Invalid operator');
-    }
-  };
-
-  createNumberLayout();
+createNumberLayout();

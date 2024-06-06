@@ -1,5 +1,5 @@
 -- what is it that i wish to create
--- what would a enginner do? 
+-- what would a engineer do? 
 -- what would a computer scientist do? 
 
 create something you need...
