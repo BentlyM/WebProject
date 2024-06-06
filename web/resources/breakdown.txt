@@ -11,5 +11,7 @@ how will you implement a functionality to the numbers given they are contained i
 
 the for each method doesn't have a given limit what is the for each method iterating threw? there are three methods
     - method one iterate threw a nested object array given a key assignment of 'value' and then assign it a prop of the given number in ascending order. this allows use to specify the amount of digits, there length, and include the values noted in the pervious question aka (innerHtml) and value.
-    - method two ?
-    - method three ?
+    - method two using a loop and conditional statement after a certain amount of iterations or a specify iteration divisible by a certain number let the nth value of that condition equal that textContent or value.
+    - method three pretty similar to the first but instead of a object you use an array.
+
+stackOverFlow assistance - https://stackoverflow.com/questions/74580139/where-to-reset-the-value-of-operator-in-calculator 

@@ -1,18 +1,20 @@
+const division = document.getElementById('division');
+const multiply = document.getElementById('multiplication');
+const subtraction = document.getElementById('subtraction');
+const addition = document.getElementById('addition');
+const equal = document.getElementById('equal');
+const digit = document.getElementById('digit');
+const clear = document.querySelector('#clear');
+let num1 , num2, operator;
+let sum = 0; 
+
 const operations = [
   {value: '/'},
   {value: '*'},
   {value: '-'},
   {value: '+'},
-  {value: '='}
+  {value: '='},
 ]
-
-const division = document.getElementById('division').value = operations[0].value;;
-const multiply = document.getElementById('multiplication').value = operations[1].value;
-const subtraction = document.getElementById('subtraction').value = operations[2].value;
-const addition = document.getElementById('addition').value = operations[3].value;
-const equal = document.getElementById('equal').value = operations[4].value;
-const digit = document.getElementById('digit');
-let number1 , number2, operator; 
 
 const buttons = [
   { value: '1' },
@@ -26,10 +28,38 @@ const buttons = [
   { value: '9' },
 ];
 
+clear.addEventListener('click', ()=>{
+  if(digit.innerHTML != ''){
+    sum = 0;
+    num1 = '';
+    num2 = '';
+    operator = '';
+    digit.innerHTML = '0';
+  };
+})
+
+division.addEventListener('click',()=>{
+  division.value = operations[0].value;
+  division.style.opacity = 0.9;
+  operator = division.value;
+  console.log(operator);
+})
+
+equal.addEventListener('click', ()=> {
+  equal.value = sum;
+  digit.innerHTML = equal.value;
+  if (num1 != '' && num2 != '') {
+    operate()
+    operator = '='
+  }
+})
+
 const add = (x , y) => x + y;
 const sub = (x , y) => x - y;
 const multi = (x , y) => x * y;
 const divide = (x , y) => x / y;
+
+
 
 const createNumberLayout = () => {
     const container = document.getElementById('numbers');
@@ -40,8 +70,8 @@ const createNumberLayout = () => {
       buttonElement.textContent = button.value;
       buttonElement.value = button.value;
       container.appendChild(buttonElement);
-      buttonElement.onclick = () => {
-        if(digit.innerHTML === '0'){digit.innerHTML = ''}
+      buttonElement.onmousedown = () => {
+        if(digit.innerHTML === '0'){digit.innerHTML = ''};
         digit.innerHTML += buttonElement.value;
       };
   });
