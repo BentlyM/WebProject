@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calc-wrap">
+            <nav class="icon"><img src="./resources/img/Screenshot 2024-06-04 175543.png" id="img-1" alt="gear"/></nav>
+            <div class="display" id="calculation">
+                <span id="digit">0</span>
+            </div>
+            <div class="main">
+                <div id="body-wrap">
+                    <div class="extra">
+                        <div class="btn" id="clear" style="font-size: 1.8rem;">AC</div>
+                        <div class="btn" id="opposite " style="font-size: 2rem; font-weight: bold; opacity: 0.5;">+/-</div>
+                        <div class="btn" id="remainder" style="font-size: 1.8rem; opacity: 0.5;">%</div>
+                    </div>
+                    <div id="numbers"></div>
+                    <div class="zeroBtn">
+                        <div class="btn" id="zero">0</div>
+                        <div class="btn" style="font-size: 1.8rem; opacity: 0.5;" id="period">.</div>
+                    </div>
+                </div>
+                <div class="operator">
+                    <div class="btn" id="division">÷</div>
+                    <div class="btn" id="multiplication">&times;</div>
+                    <div class="btn" id="subtraction">-</div>
+                    <div class="btn" id="addition">+</div>
+                    <div class="btn" id="equal">=</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
